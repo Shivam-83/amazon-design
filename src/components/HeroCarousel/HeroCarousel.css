@@ -1,0 +1,53 @@
+.hero{
+  position:relative;
+  height:420px;
+  width:100%;
+  overflow:hidden;
+}
+
+/* SLIDES */
+
+.slide{
+  position:absolute;
+  inset:0;
+
+  background-size:cover;
+  background-position:center top;
+  background-repeat:no-repeat;
+
+  opacity:0;
+  transition:opacity .5s ease;
+}
+
+.slide.active{
+  opacity:1;
+}
+
+/* AMAZON FADE */
+
+.fade{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:140px;
+  background:linear-gradient(
+    to bottom,
+    rgba(255,255,255,0) 0%,
+    #e3e6e6 100%
+  );
+}
+
+/* ARROWS */
+
+.arrow{
+  position:absolute;
+  top:45%;
+  font-size:40px;
+  background:none;
+  border:none;
+  cursor:pointer;
+  z-index:3;
+}
+
+.left{left:15px;}
+.right{right:15px;}

@@ -1,0 +1,190 @@
+/* ===== GLOBAL RESET ===== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== HEADER ===== */
+
+.header {
+  height: 60px;
+  background: #131921;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+}
+
+/* LEFT */
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 98px;
+  margin-right: 10px;
+  object-fit: contain;
+}
+
+/* NAV ITEMS */
+
+.nav-item {
+  padding: 7px 9px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.nav-item:hover {
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+}
+
+/* TEXT */
+
+.line1 {
+  font-size: 12px;
+  color: #cccccc;
+  display: block;
+  line-height: 14px;
+}
+
+.line2 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15px;
+}
+
+/* LOCATION */
+
+.location {
+  display: flex;
+  gap: 6px;
+}
+
+.loc-icon {
+  margin-top: 6px;
+}
+
+/* SEARCH */
+
+.search {
+  flex: 1;
+  display: flex;
+  max-width: 900px;
+  margin: 0 14px;
+  height: 40px;
+}
+
+.search-select {
+  width: 52px;
+  background: #e6e6e6;
+  border: none;
+  font-size: 12px;
+  padding-left: 5px;
+  border-radius: 4px 0 0 4px;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  padding: 0 10px;
+  font-size: 15px;
+  outline: none;
+}
+
+.search-btn {
+  width: 45px;
+  border: none;
+  background: #febd69;
+  border-radius: 0 4px 4px 0;
+  font-size: 18px;
+}
+
+.search-btn:hover {
+  background: #f3a847;
+}
+
+/* RIGHT */
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.lang {
+  font-weight: 700;
+}
+
+/* CART */
+
+.cart {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  gap: 3px;
+}
+
+.cart-count {
+  position: absolute;
+  top: -2px;
+  left: 17px;
+  font-size: 16px;
+  color: #f08804;
+  font-weight: 800;
+}
+
+/* ===== SUBNAV ===== */
+
+.subnav {
+  height: 39px;
+  background: #232f3e;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+  font-size: 14px;
+}
+
+.sub-left {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.sub-left span {
+  padding: 6px 6px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.sub-left span:hover {
+  border: 1px solid #fff;
+  border-radius: 2px;
+}
+
+.all {
+  font-weight: 700;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.rufus {
+  background: #37475a;
+  padding: 6px 14px;
+  border-radius: 18px;
+  font-weight: 700;
+}
+
+.sub-right {
+  font-weight: 700;
+}

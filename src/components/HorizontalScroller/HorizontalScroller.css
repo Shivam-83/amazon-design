@@ -1,0 +1,104 @@
+.amazon-row {
+  background: #fff;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+/* HEADER */
+
+.amazon-row-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 14px;
+}
+
+.amazon-row-header h2 {
+  font-size: 21px;
+  font-weight: 700;
+  color: #0f1111;
+}
+
+.row-link {
+  font-size: 14px;
+  color: #007185;
+  cursor: pointer;
+}
+
+.row-link:hover {
+  text-decoration: underline;
+}
+
+/* SCROLLER */
+
+.amazon-row-body {
+  position: relative;
+}
+
+.amazon-row-items {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 30px; /* space for arrows */
+}
+
+.amazon-row-items::-webkit-scrollbar {
+  display: none;
+}
+
+/* 👇 KEY FIX — UNIFORM IMAGE BOXES */
+
+.amazon-row-items img {
+  height: 200px;
+  width: 260px;
+  object-fit: cover;
+  border-radius: 4px;
+  background: #f7f7f7;
+  transition: transform .2s;
+}
+
+.amazon-row-items img:hover {
+  transform: scale(1.05);
+}
+
+/* ARROWS — AMAZON STYLE */
+
+.row-arrow {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255,255,255,0.85);
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+
+  font-size: 34px;
+  color: #111;
+
+  transition: 0.2s;
+}
+
+/* LEFT SIDE */
+.row-arrow.left {
+  left: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+/* RIGHT SIDE */
+.row-arrow.right {
+  right: 0;
+  border-radius: 0 4px 4px 0;
+}
+
+/* HOVER EFFECT */
+.row-arrow:hover {
+  background: rgba(255,255,255,1);
+}

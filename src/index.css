@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Amazon Ember";
+  src: url("/fonts/AmazonEmber-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Amazon Ember";
+  src: url("/fonts/AmazonEmber-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+
+body {
+  font-family: "Amazon Ember", Arial, sans-serif;
+}
