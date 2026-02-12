@@ -49,7 +49,7 @@ export default function SponsoredBanner(){
         </button>
 
         <p style={{fontSize:"12px", color:"#777"}}>
-          Sponsored
+          Sponsoredd
         </p>
       </div>
 
