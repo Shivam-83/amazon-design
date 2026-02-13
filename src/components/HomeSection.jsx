@@ -1,8 +1,9 @@
 import AmazonCard from "./AmazonCard";
 import HorizontalScroller from "./HorizontalScroller/HorizontalScroller";
 import DealRow from "./DealRow";
-import SponsoredBanner from "./SponsoredBanner";
 import ExtraSection from "./ExtraSection";
+import ProductShowcaseRow from "./ProductShowcaseRow";
+import AmazonLiveRow from "./AmazonLiveRow";
 
 export default function HomeSection(){
 
@@ -28,20 +29,42 @@ const shoes = [
 ];
 
 const bikes = [
-  "https://images.unsplash.com/photo-1558981403-c5f9899a28bc",
-  "https://images.unsplash.com/photo-1609630875171-b1321377ee65",
-  "https://images.unsplash.com/photo-1580310614729-ccd69652491d",
   "https://m.media-amazon.com/images/I/71Ilh7r3+AL._AC_SY200_.jpg",
-  "https://images.unsplash.com/photo-1591637333184-19aa84b3e01f"
+  "https://m.media-amazon.com/images/I/71GvHvqqFKL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/81CEjSdYKQL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/71fvH2BN9-L._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/71IIn83pF6L._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/71+CsirvJ2L._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/61163L3zeYL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/71eCO4ULXfL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/71rH1JsIKfL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/51eCFfeV9IL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/71WZtxPiqzL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/71RCJ8dgB-L._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/61+Ce77ziYL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/51Pd1mYLl0L._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/71sWj2oOFnL._AC_SY200_.jpg"
 ];
 
 
   const clothing = [
-  "https://images.unsplash.com/photo-1520975916090-3105956dac38",
-  "https://images.unsplash.com/photo-1618354691373-d851c5c3a990",
-  "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7",
-  "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a",
-  "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf"
+  "https://m.media-amazon.com/images/I/71I53evweVL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/81biKixsaDL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/71DCFWHFolL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/713n+TxyfCL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/71eUwDk8z+L._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/61OzjLUVZZL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/51T42aZXalL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/61PHOMhPdCL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/81MfjxIbRsL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/619xMvtqClL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/716gXBFZjjL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/61p0yiuehWL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/61LuLR7IR5L._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/61dFcpPdJkL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/51xOEh5DKYL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/61Qrj5J9F-L._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/41vimVyBlUL._AC_SY200_.jpg"
 ];
 
 const kitchen = [
@@ -51,16 +74,54 @@ const kitchen = [
   "https://m.media-amazon.com/images/I/71aHbP5M2HL._AC_SY200_.jpg",
   "https://m.media-amazon.com/images/I/51WmCssta3L._AC_SY200_.jpg",
   "https://m.media-amazon.com/images/I/41ggFXk-slL._AC_SY200_.jpg",
-  "https://m.media-amazon.com/images/I/512wpyNp2qL._AC_SY200_.jpg"
+  "https://m.media-amazon.com/images/I/512wpyNp2qL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/5147plm+Q0L._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/51BERzTThLL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/615-8A+JnRL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/61cz5DcxmxL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/81A+DM0nS-L._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/51zanHhW9pL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/51sTasV5+cL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/513bEiC74lL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/61VtxIS36CL._AC_SY200_.jpg"
 ];
 
 const smallBiz = [
-  "https://m.media-amazon.com/images/I/71EHzA8qYUL._AC_SY200_.jpg",
-  "https://m.media-amazon.com/images/I/61gKkYQn6lL._AC_SY200_.jpg",
-  "https://m.media-amazon.com/images/I/71W9v6l5ZkL._AC_SY200_.jpg",
-  "https://m.media-amazon.com/images/I/61bK6PMOC3L._AC_SY200_.jpg",
-  "https://m.media-amazon.com/images/I/61K3ZL0JvQL._AC_SY200_.jpg"
+  "https://m.media-amazon.com/images/I/61vihvwHdBL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/61GfiZngyIL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/61Qm+VXoCwL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/51Wjei45NzL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/61sEyMFJ1qL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/51grqgqlvpL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/51zEqsqVN-L._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/41Wt1ZrLKtL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/51wVmYlIb6L._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/71DAtqHZoyL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/71PPEO-O0kL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/61CDlwqNwuL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/61ZKmE+hC1L._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/71BtTbZBo1L._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/71Il+hAxVWL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/71Fp2VToLXL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/71Il+hAxVWL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/71Il+hAxVWL._AC_SY200_.jpg",
 ];
+
+const smartFurnitureImgs = [
+  "https://m.media-amazon.com/images/I/61qvyZkMXoL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/51j0XXDEN4L._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/71CF1Agys+L._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/91wxHEnm4JL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/81AFUOXQ85L._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/81SBe9M5mdL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/61wNCOCg43L._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/61cNkRm6YCL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/71d+4Ty2O8L._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/71Kn894dzDL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/61FmZ4egdbL._AC_SY200_.jpg",
+  "https://m.media-amazon.com/images/I/61qvyZkMXoL._AC_SY200_.jpg"
+];
+
 
 
 return(
@@ -103,12 +164,13 @@ return(
 
     </div>
 
-    {/* ===== AMAZON STYLE SCROLL ROWS (FULL WIDTH) ===== */}
-    <HorizontalScroller
-      title="Starting ₹70,348 | From daily commutes to weekend thrills"
-      linkText="See all offers"
-      items={bikes}
-    />
+
+    <DealRow
+  title="Starting ₹70,348 | From daily commutes to weekend thrills
+"
+  linkText="See all offers"
+  items={bikes}
+/>
 
     <HorizontalScroller
       title="Best Sellers in Clothing & Accessories"
@@ -124,12 +186,23 @@ return(
 />
 
 <DealRow
-  title="Min.30% off | Trending & must-haves | Small Businesses"
+  title="Min. 50% off | Unique home finds | Amazon Brands & more"
   linkText="See more"
   items={smallBiz}
 />
 
-<SponsoredBanner/>
+
+
+<ProductShowcaseRow />
+
+
+<AmazonLiveRow/>
+
+<DealRow
+  title="Up to 60% Off | Smart furniture for every room"
+  linkText="See all offers"
+  items={smartFurnitureImgs}
+/>
 
 
   </div>

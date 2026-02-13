@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Amazon Ember";
 }
 
 /* ===== HEADER ===== */
@@ -28,10 +28,33 @@ body {
   align-items: center;
 }
 
+/* Container to hold logo and .in */
+.logo-container {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px 8px 0 15px;
+  cursor: pointer;
+}
+
+/* The main logo image */
 .logo {
-  width: 98px;
-  margin-right: 10px;
+  width: 95px; /* Standard Amazon width */
   object-fit: contain;
+}
+
+/* The .in text styling */
+.logo-in {
+  color: #fff; /* Slightly grey/white like the original */
+  font-family: 'Amazon Ember', Arial, sans-serif;
+  font-size: 14px;
+  margin-top: 2px; /* Pulls it up to align with the top of the 'n' */
+  margin-left: 2px; /* Pulls it closer to the logo */
+}
+
+/* Hover effect seen on Amazon.in */
+.logo-container:hover {
+  outline: 1px solid white;
+  border-radius: 2px;
 }
 
 /* NAV ITEMS */
@@ -51,7 +74,7 @@ body {
 
 .line1 {
   font-size: 12px;
-  color: #cccccc;
+  color: #ccc;
   display: block;
   line-height: 14px;
 }
@@ -75,41 +98,77 @@ body {
 
 /* SEARCH */
 
-.search {
+/* SEARCH WRAPPER */
+.search-container {
   flex: 1;
   display: flex;
   max-width: 900px;
   margin: 0 14px;
+}
+
+.search {
+  display: flex;
+  width: 100%;
   height: 40px;
+  border-radius: 4px; /* Rounded corners for the whole bar */
+  overflow: hidden;   /* Ensures internal elements don't spill out */
+  background-color: white;
 }
 
+/* Orange Glow on Focus */
+.search:focus-within {
+  box-shadow: 0 0 0 2px #f3a847; /* Amazon's focus ring */
+}
+
+/* DROPDOWN */
 .search-select {
-  width: 52px;
-  background: #e6e6e6;
+  width: 60px; /* Slightly wider to fit text and arrow comfortably */
+  background: #f3f3f3; /* Matches image 1 better */
   border: none;
-  font-size: 12px;
-  padding-left: 5px;
-  border-radius: 4px 0 0 4px;
+  border-right: 1px solid #ddd; /* Separator line */
+  font-size: 13px;
+  color: #555;
+  padding-left: 8px;
+  cursor: pointer;
+  font-family: 'Amazon Ember', sans-serif;
 }
 
+.search-select:hover {
+  background: #dadada;
+}
+
+/* INPUT FIELD */
 .search-input {
   flex: 1;
   border: none;
-  padding: 0 10px;
+  padding: 0 12px;
   font-size: 15px;
   outline: none;
+  color: #111;
 }
 
+.search-input::placeholder {
+  color: #666;
+}
+
+/* BUTTON */
 .search-btn {
   width: 45px;
   border: none;
-  background: #febd69;
-  border-radius: 0 4px 4px 0;
-  font-size: 18px;
+  background: #febd69; /* That specific Amazon yellow-orange */
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .search-btn:hover {
   background: #f3a847;
+}
+
+.search-btn svg {
+  color: #333; /* Darker icon color for contrast */
 }
 
 /* RIGHT */
@@ -145,46 +204,54 @@ body {
 
 .subnav {
   height: 39px;
-  background: #232f3e;
+  background-color: #232f3e; /* Amazon's specific blue-gray */
   color: white;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 12px;
+  padding: 0 15px;
+  font-family: 'Amazon Ember', Arial, sans-serif;
   font-size: 14px;
 }
 
 .sub-left {
   display: flex;
-  gap: 18px;
+  align-items: center;
+  flex: 1;
+  overflow-x: auto; /* Allows scrolling if links overflow */
+  white-space: nowrap;
+}
+
+/* Remove scrollbar for a cleaner look */
+.sub-left::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-link {
+  padding: 8px 9px;
+  margin: 2px 0;
+  cursor: pointer;
+  border: 1px solid transparent;
+  display: flex;
   align-items: center;
 }
 
-.sub-left span {
-  padding: 6px 6px;
-  cursor: pointer;
-  border: 1px solid transparent;
-}
-
-.sub-left span:hover {
-  border: 1px solid #fff;
+.nav-link:hover {
+  border: 1px solid white;
   border-radius: 2px;
 }
 
-.all {
-  font-weight: 700;
-  display: flex;
-  gap: 5px;
-  align-items: center;
-}
-
-.rufus {
-  background: #37475a;
-  padding: 6px 14px;
-  border-radius: 18px;
-  font-weight: 700;
+/* Bold 'All' and other specific links */
+.nav-link.all {
+  font-weight: 800;
+  padding-left: 0;
 }
 
 .sub-right {
+  display: flex;
+  align-items: center;
   font-weight: 700;
+}
+
+.nav-promo {
+  height: 39px;
 }
