@@ -14,7 +14,7 @@ function ProductCard({ product }) {
       <p style={styles.name}>{product.name}</p>
 
       <div style={styles.priceRow}>
-        <span style={styles.price}>₹{product.price}</span>
+        <span style={styles.price}><sup style={{ fontSize: '0.6em' }}>₹</sup>{product.price}</span>
         <span style={styles.mrp}>M.R.P ₹{product.mrp}</span>
       </div>
 
@@ -167,17 +167,19 @@ const styles = {
 
   price:{
     fontSize:"20px",
-    fontWeight:700
+    fontWeight:400
   },
 
   mrp:{
     textDecoration:"line-through",
     color:"#565959",
-    fontSize:"14px"
+    fontSize:"12px",
+    marginTop:"2px"
   },
 
   thumbRow:{
     display:"flex",
+    justifyContent:"center",
     gap:"8px",
     marginTop:"auto"
   },
@@ -196,6 +198,7 @@ const styles = {
   thumb:{
     width:"100%",
     height:"100%",
+    border:"1px solid #000",
     objectFit:"cover"
   }
 };

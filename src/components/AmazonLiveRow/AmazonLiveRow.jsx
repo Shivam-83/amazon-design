@@ -140,7 +140,7 @@ export default function AmazonLiveRow(){
                 </div>
                 <p style={styles.title}>{p.title}</p>
                 <div>
-                  <span style={styles.price}>₹{p.price}</span>
+                  <span style={styles.price}><sup style={{ fontSize: '0.6em' }}>₹</sup>{p.price}</span>
                   <span style={styles.mrp}> ₹{p.mrp}</span>
                 </div>
               </div>
@@ -299,7 +299,7 @@ const styles={
   },
 
   price:{
-    fontWeight:"700",
+    fontWeight:"400",
     fontSize:"16px"
   },
 

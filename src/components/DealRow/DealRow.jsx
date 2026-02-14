@@ -64,7 +64,9 @@ export default function HorizontalScroller({ title, linkText, items }) {
           display:"flex",
           gap:"18px",
           overflowX:"auto",
-          scrollBehavior:"smooth"
+          scrollBehavior:"smooth",
+          scrollbarWidth:"none",
+    msOverflowStyle:"none"
         }}
       >
         {items.map((img,i)=>(

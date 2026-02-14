@@ -1,4 +1,4 @@
-import AmazonCard from "./AmazonCard";
+import AmazonCard from "../AmazonCard/AmazonCard";
 
 export default function ExtraSection() {
 

@@ -1,9 +1,9 @@
 import Header from "./components/Header/Header";
 import HeroCarousel from "./components/HeroCarousel/HeroCarousel";
-import HomeSection from "./components/HomeSection";
-import Footer from "./components/Footer";
-import AmazonBottomBar from "./components/AmazonBottomBar";
-import AmazonFooterEnd from "./components/AmazonFooterEnd";
+import HomeSection from "./components/HomeSection/HomeSection";
+import Footer from "./components/Footer/Footer";
+import AmazonBottomBar from "./components/AmazonBottomBar/AmazonBottomBar";
+import AmazonFooterEnd from "./components/AmazonFooterEnd/AmazonFooterEnd";
 
 
 function App() {
