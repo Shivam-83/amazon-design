@@ -1,9 +1,8 @@
-import AmazonCard from "./AmazonCard";
-import HorizontalScroller from "./HorizontalScroller/HorizontalScroller";
-import DealRow from "./DealRow";
-import ExtraSection from "./ExtraSection";
-import ProductShowcaseRow from "./ProductShowcaseRow";
-import AmazonLiveRow from "./AmazonLiveRow";
+import AmazonCard from "../AmazonCard/AmazonCard";
+import DealRow from "../DealRow/DealRow";
+import ExtraSection from "../ExtraSection/ExtraSection";
+import ProductShowcaseRow from "../ProductShowcaseRow/ProductShowcaseRow";
+import AmazonLiveRow from "../AmazonLiveRow/AmazonLiveRow";
 
 export default function HomeSection(){
 
@@ -172,10 +171,12 @@ return(
   items={bikes}
 />
 
-    <HorizontalScroller
-      title="Best Sellers in Clothing & Accessories"
-      items={clothing}
-    />
+    
+
+    <DealRow
+  title="Best Sellers in Clothing & Accessories"
+  items={clothing}
+/>
 
     <ExtraSection />
 

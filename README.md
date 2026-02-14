@@ -1,16 +1,85 @@
-# React + Vite
+# Amazon Clone (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive Amazon-style storefront UI built with React and Vite. This repository contains a client-only mock of an e-commerce homepage showcasing components such as a header, hero carousel, product cards, horizontal scrollers, sponsored banners, and footer sections.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Modern React + Vite starter with fast HMR
+- Responsive layout and components for desktop and mobile
+- Reusable UI pieces: `Header`, `HeroCarousel`, `AmazonCard`, `HorizontalScroller`, `Footer`, and more
+- Static assets under `public/` for images and fonts
+- Clean, component-driven structure in `src/components/`
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React (JSX)
+- Vite for dev server + build
+- Plain CSS modules/styles (see `src/` files)
+- No backend — static demo purely for UI/prototyping
 
-## Expanding the ESLint configuration
+## Project Structure (high level)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `index.html` — app entry
+- `src/` — application source
+	- `main.jsx` — React app bootstrap
+	- `App.jsx` — top-level app component
+	- `components/` — UI components (Header, HeroCarousel, product rows, footer, etc.)
+- `public/` — static assets (images, fonts)
+- `package.json` — scripts and dependencies
+
+Notable components: `src/components/Header/Header.jsx`, `src/components/HeroCarousel/HeroCarousel.jsx`, `src/components/AmazonCard.jsx`, and `src/components/HorizontalScroller/HorizontalScroller.jsx`.
+
+## Getting Started
+
+Prerequisites: Node.js (v16+ recommended) and npm (or Yarn).
+
+1. Install dependencies
+
+```bash
+npm install
+```
+
+2. Run the development server
+
+```bash
+npm run dev
+```
+
+3. Build for production
+
+```bash
+npm run build
+```
+
+4. Preview the production build locally
+
+```bash
+npm run preview
+```
+
+## Usage
+
+This project is a UI prototype. Edit components in `src/components/` to change layout, styling, or behavior. Replace static images in `public/images/` to customize banners and product visuals.
+
+## Deployment
+
+Because this is a static frontend, you can deploy the build output to any static host (Vercel, Netlify, GitHub Pages, etc.). Common steps:
+
+- Build: `npm run build`
+- Deploy the `dist/` folder created by Vite to your host
+
+## Contributing
+
+Feel free to open issues or pull requests to improve components, accessibility, or responsive behavior. Suggested improvements:
+
+- Add keyboard navigation and ARIA labels for interactive elements
+- Add unit tests for key components
+- Integrate a product API or mock server for dynamic content
+
+## License
+
+This project is provided as a demo. Add a license file if you want to publish this project under an open-source license.
+
+---
+
+Enjoy exploring and customizing the Amazon-style UI!
