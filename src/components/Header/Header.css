@@ -11,16 +11,15 @@ body {
 }
 
 /* ===== HEADER ===== */
-
 .header {
-  height: 60px;
+  height: auto; /* Changed from 60px to allow wrapping if needed */
+  min-height: 60px;
   background: #131921;
   color: white;
   display: flex;
   align-items: center;
-  padding: 0 12px;
-  font-family: 'Amazon Ember', Arial, sans-serif;
-  font-size: 14px;
+  padding: 5px 12px;
+  flex-wrap: wrap; /* Allows items to jump to next line on small screens */
 }
 
 /* LEFT */
@@ -111,8 +110,9 @@ body {
 .search-container {
   flex: 1;
   display: flex;
+  min-width: 200px; /* Ensures search doesn't disappear entirely */
   max-width: 900px;
-  margin: 0 14px;
+  margin: 5px 14px;
 }
 
 .search {

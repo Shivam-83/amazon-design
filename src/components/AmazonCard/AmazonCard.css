@@ -1,10 +1,19 @@
-.amazon-card{
-  background:#fff;
-  padding:18px;
-  height:100%;
+.amazon-card {
+  background: #fff;
+  padding: 18px; 
+  height: 100%;
+  overflow: hidden; /* 👈 This clips any image that tries to poke out */
+  display: flex;
+  flex-direction: column;
+}
 
-  display:flex;
-  flex-direction:column;
+/* This ensures the image never grows larger than its parent card */
+.amazon-card img {
+  max-width: 100%;
+  height: 100%;
+  display: block;
+  /* Ensures the image fits inside the box without being cut off */
+  object-fit: contain;
 }
 
 /* TITLE */
@@ -55,4 +64,17 @@
 
 .card-link:hover{
   text-decoration:underline;
+}
+
+.single-card-img {
+  width: 100%;
+  height: 300px; /* Adjust based on your card height */
+  object-fit: cover; /* This prevents stretching */
+  overflow: hidden;
+}
+
+.single-card-img img {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
