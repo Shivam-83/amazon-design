@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { HiOutlineChevronLeft, HiOutlineChevronRight } from "react-icons/hi";
 import "./HeroCarousel.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
@@ -49,13 +50,13 @@ export default function HeroCarousel() {
       <div className="fade"></div>
 
       {/* Arrows */}
-      <button className="arrow left" onClick={prevSlide}>
-        <FaChevronLeft />
-      </button>
+     <button className="arrow left" onClick={prevSlide}>
+    <HiOutlineChevronLeft strokeWidth={1} /> 
+  </button>
 
-      <button className="arrow right" onClick={nextSlide}>
-        <FaChevronRight />
-      </button>
+  <button className="arrow right" onClick={nextSlide}>
+    <HiOutlineChevronRight strokeWidth={1} />
+  </button>
     </div>
   );
 }

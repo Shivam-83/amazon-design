@@ -38,7 +38,10 @@ export default function Header() {
   <div className="search">
     <select className="search-select">
       <option>All</option>
+      <option>new</option>
+      
     </select>
+    
     <input
       className="search-input"
       placeholder="Search Amazon.in"
@@ -62,18 +65,18 @@ export default function Header() {
           </div>
 
           <div className="nav-item">
-            <span className="line1">Hello, Sign in</span>
+            <span className="line3">Hello, Sign in</span>
             <span className="line2">Account & Lists ▾</span>
           </div>
 
           <div className="nav-item">
-            <span className="line1">Returns</span>
+            <span className="line3">Returns</span>
             <span className="line2">& Orders</span>
           </div>
 
           <div className="nav-item cart">
             <FaShoppingCart size={26} />
-            <span className="cart-count">2</span>
+            <span className="cart-count">0</span>
             <span className="line2">Cart</span>
           </div>
 

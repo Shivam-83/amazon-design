@@ -251,19 +251,26 @@ const styles={
   },
 
   /* ARROWS */
-  arrow:{
-    position:"absolute",
-    top:"50%",
-    transform:"translateY(-50%)",
-    background:"#fff",
-    border:"1px solid #ddd",
-    width:"36px",
-    height:"90px",
-    cursor:"pointer",
-    zIndex:2,
-    fontSize:"22px",
-    boxShadow:"0 0 5px rgba(0,0,0,0.2)"
-  },
+ arrow: {
+  position: "absolute",
+  top: "50%",
+  transform: "translateY(-50%)",
+  // Change #fff to rgba for transparency (0.5 = 50% transparent)
+  background: "rgba(255, 255, 255, 0.5)", 
+  // We also make the border slightly transparent to blend in
+  border: "1px solid rgba(221, 221, 221, 0.7)", 
+  width: "36px",
+  height: "90px",
+  cursor: "pointer",
+  zIndex: 2,
+  fontSize: "22px",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  boxShadow: "0 0 5px rgba(0,0,0,0.1)",
+  // Adds a smooth transition when you hover over it
+  transition: "background 0.2s ease-in-out"
+},
 
   /* CARDS */
   card:{

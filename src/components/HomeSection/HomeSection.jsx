@@ -168,6 +168,8 @@ return(
   title="Starting ₹70,348 | From daily commutes to weekend thrills
 "
   linkText="See all offers"
+  height="220px"
+  width="260px"
   items={bikes}
 />
 
