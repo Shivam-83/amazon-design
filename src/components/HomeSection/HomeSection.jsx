@@ -128,10 +128,11 @@ return(
 
     {/* ===== TOP 4-CARD GRID ===== */}
     <div style={{
-      display:"grid",
-      gridTemplateColumns:"repeat(4,1fr)",
-      gap:"20px",
-      padding:"20px"
+      display: "grid",
+  /* This makes the layout fluid and prevents the 'white ghost' space */
+  gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+  gap: "20px",
+  padding: "20px"
     }}>
 
       <AmazonCard 
@@ -153,13 +154,15 @@ return(
       />
 
       <AmazonCard
-        title="Up to 75% off | Headphones"
-        items={[{
-          img:"https://images-eu.ssl-images-amazon.com/images/G/31/img24/MSO5/Boat_PC_CC_758x608_1x._SY304_CB564383870_.jpg"
-        }]}
-        linkText="Shop Now"
-        isSingle
-      />
+  title="Up to 75% off | Headphones"
+  items={[{
+    img: "https://images-eu.ssl-images-amazon.com/images/G/31/img24/MSO5/Boat_PC_CC_758x608_1x._SY304_CB564383870_.jpg",
+    // Add an inline style property if your AmazonCard component supports it
+    style: { width: '50%', height: 'auto', display: 'block' } 
+  }]}
+  linkText="Shop Now"
+  isSingle
+/>
 
     </div>
 
