@@ -1,5 +1,5 @@
 /* ===== GLOBAL RESET ===== */
-
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Amazon Ember";
+  font-family: "Amazon Ember","Alegreya Sans";
 }
 
 /* ===== HEADER ===== */
@@ -19,6 +19,8 @@ body {
   display: flex;
   align-items: center;
   padding: 0 12px;
+  font-family: 'Amazon Ember', Arial, sans-serif;
+  font-size: 14px;
 }
 
 /* LEFT */
@@ -85,6 +87,13 @@ body {
   line-height: 15px;
 }
 
+.line3{
+  font-size: 12px;
+  color: #fff;
+  display: block;
+  line-height: 14px;
+}
+
 /* LOCATION */
 
 .location {
@@ -128,9 +137,10 @@ body {
   border-right: 1px solid #ddd; /* Separator line */
   font-size: 13px;
   color: #555;
-  padding-left: 8px;
+  padding-left: 10px;
   cursor: pointer;
   font-family: 'Amazon Ember', sans-serif;
+  
 }
 
 .search-select:hover {
@@ -141,7 +151,7 @@ body {
 .search-input {
   flex: 1;
   border: none;
-  padding: 0 12px;
+  padding: 7px 10px 10px 10px;
   font-size: 15px;
   outline: none;
   color: #111;
@@ -161,6 +171,7 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  
 }
 
 .search-btn:hover {

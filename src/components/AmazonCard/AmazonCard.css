@@ -39,8 +39,9 @@
 }
 
 .grid-item p{
-  font-size:13px;
+  font-size:12px;
   margin-top:6px;
+  color:#0f1111;
 }
 
 /* LINK AT BOTTOM */
@@ -48,7 +49,7 @@
 .card-link{
   margin-top:auto;   /* 👈 PUSHES TO BOTTOM */
   font-size:13px;
-  color:#007185;
+  color: #2162a2;;
   cursor:pointer;
 }
 

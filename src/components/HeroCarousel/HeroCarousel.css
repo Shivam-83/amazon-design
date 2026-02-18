@@ -39,15 +39,31 @@
 
 /* ARROWS */
 
-.arrow{
-  position:absolute;
-  top:45%;
-  font-size:40px;
-  background:none;
-  border:none;
-  cursor:pointer;
-  z-index:3;
+.arrow {
+  position: absolute;
+  top: 45%;
+  /* Reduced font-size makes the stroke look thinner and more elegant */
+  font-size: 50px; 
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111; /* Amazon's dark grey/black */
+  transition: transform 0.1s ease;
 }
 
-.left{left:15px;}
-.right{right:15px;}
+/* Adds a slight "pop" when clicking, similar to Amazon */
+.arrow:active {
+  transform: translateY(-50%) scale(0.9);
+}
+
+.left { left: 15px; }
+.right { right: 15px; }
+
+/* Optional: If you want that light blue highlight on hover from your image */
+.arrow:hover {
+  color: #007185; 
+}

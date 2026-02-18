@@ -1,6 +1,6 @@
 import { useRef } from "react";
 
-export default function HorizontalScroller({ title, linkText, items }) {
+export default function HorizontalScroller({ title, linkText, items , width, height}) {
 
   const scrollRef = useRef();
 
@@ -28,11 +28,11 @@ export default function HorizontalScroller({ title, linkText, items }) {
         alignItems:"center",
         marginBottom:"10px"
       }}>
-        <h2 style={{fontSize:"21px"}}>{title}</h2>
+        <h2 style={{fontSize:"21px",margin:"10px"}}>{title}</h2>
 
         {linkText && (
           <span style={{
-            color:"#007185",
+            color:"#2162a1",
             fontSize:"14px",
             cursor:"pointer"
           }}>
@@ -71,8 +71,8 @@ export default function HorizontalScroller({ title, linkText, items }) {
       >
         {items.map((img,i)=>(
           <div key={i} style={{
-            minWidth:"180px",
-            height:"180px",
+            minWidth: width || "180px",
+            height:height || "180px",
             display:"flex",
             alignItems:"center",
             justifyContent:"center"
@@ -97,16 +97,24 @@ export default function HorizontalScroller({ title, linkText, items }) {
 /* ===== Arrow Style ===== */
 
 const arrowStyle = (side) => ({
-  position:"absolute",
-  top:"55%",
+  position: "absolute",
+  top: "50%", // Centered better at 50%
   [side]: "0",
-  transform:"translateY(-50%)",
-  width:"46px",
-  height:"90px",
-  background:"rgba(255,255,255,0.9)",
-  border:"1px solid #ddd",
-  fontSize:"28px",
-  cursor:"pointer",
-  zIndex:5,
-  boxShadow:"0 2px 5px rgba(0,0,0,0.2)"
+  transform: "translateY(-50%)",
+  width: "46px",
+  height: "90px",
+  
+  // CHANGED: Lowered 0.9 to 0.4 for a ghost-like transparency
+  background: "rgba(255,255,255,0.4)", 
+  
+  // OPTIONAL: Make the border lighter to match the transparency
+  border: "1px solid rgba(221, 221, 221, 0.5)", 
+  
+  fontSize: "28px",
+  cursor: "pointer",
+  zIndex: 5,
+  boxShadow: "0 2px 5px rgba(0,0,0,0.1)", // Lightened shadow
+  
+  // Smooth transition for the hover effect
+  transition: "background 0.3s ease, border-color 0.3s ease"
 });
