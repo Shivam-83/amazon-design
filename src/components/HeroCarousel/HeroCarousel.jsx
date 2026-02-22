@@ -31,7 +31,11 @@ export default function HeroCarousel() {
     return () => clearInterval(timer);
   }, []);
 
-  const prevSlide = () => setIndex((prev) => (prev - 1 + slides.length) % slides.length);
+
+  const prevSlide = () => {
+  console.log("prev clicked");
+  setIndex((prev) => (prev - 1 + slides.length) % slides.length);
+};
   const nextSlide = () => setIndex((prev) => (prev + 1) % slides.length);
 
   return (
